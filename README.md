@@ -1,31 +1,74 @@
 # PROYECTO-PRIMESYS
-## 🚀 Instalación y Configuración
+# PRIMESYS - Catálogo de Soluciones de Software
 
-Sigue estos pasos para correr el proyecto localmente:
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/tu-usuario/primesys.git](https://github.com/tu-usuario/primesys.git)
-   cd primesys
-Instalar dependencias de PHP:
+**PRIMESYS** es una plataforma minimalista desarrollada en **Laravel** para la gestión y venta de productos de software.
 
-Bash
+---
 
+## Guía de Instalación Rápida
+
+Sigue estos pasos en tu terminal para poner el proyecto en marcha:
+
+### 1. Instalar dependencias de PHP
+
+```bash
 composer install
-Configurar el entorno:
+```
 
-Bash
+### 2. Configurar variables de entorno
 
+```bash
 cp .env.example .env
 php artisan key:generate
-Configurar la base de datos:
-Edita tu archivo .env con tus credenciales y corre las migraciones:
+```
 
-Bash
+### 3. Configurar la base de datos
 
+Edita el archivo `.env` con tus credenciales:
+
+```
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
+
+Luego ejecuta:
+
+```bash
 php artisan migrate --seed
-Lanzar el servidor:
+```
 
-Bash
+### 4. Instalar dependencias de Node y compilar Tailwind
 
+```bash
+npm install
+npm run dev
+```
+
+### 5. Levantar el servidor
+
+```bash
 php artisan serve
+```
+
+---
+
+## Stack Tecnológico
+
+- Laravel
+- Tailwind CSS
+- Blade Templates
+- Eloquent ORM
+
+---
+
+## Estructura Principal
+
+```
+app/Http/Controllers/
+resources/views/
+routes/web.php
+```
